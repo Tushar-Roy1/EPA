@@ -87,70 +87,92 @@
     <!-- Header End -->
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
-                        <div class="d-flex align-items-center mb-5">
-                            <div class="btn-icon bg-primary mr-4">
-                                <i class="fa fa-2x fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Our Location</h4>
-                                <p class="m-0">Nalikul, Hooghly, West Bengal, India</p>
-                            </div>
+     <div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+
+            <!-- Contact Info -->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="btn-icon bg-primary mr-4">
+                            <i class="fa fa-2x fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="d-flex align-items-center mb-5">
-                            <div class="btn-icon bg-secondary mr-4">
-                                <i class="fa fa-2x fa-phone-alt text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Call Us</h4>
-                                <p class="m-0">+91 98765 43210</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="btn-icon bg-warning mr-4">
-                                <i class="fa fa-2x fa-envelope text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Email Us</h4>
-                                <p class="m-0">engineerspointacademy.edu@gmail.com</p>
-                            </div>
+                        <div class="mt-n1">
+                            <h4>Our Location</h4>
+                            <p class="m-0">Nalikul Station Bazar, Nalikul Hooghly</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
-                        <h1 class="display-4">Send Us A Message</h1>
+
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="btn-icon bg-secondary mr-4">
+                            <i class="fa fa-2x fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Call Us</h4>
+                            <p class="m-0">+012 345 6789</p>
+                        </div>
                     </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
-                                </div>
-                                <div class="col-6 form-group">
-                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </form>
+
+                    <div class="d-flex align-items-center">
+                        <div class="btn-icon bg-warning mr-4">
+                            <i class="fa fa-2x fa-envelope text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Email Us</h4>
+                            <p class="m-0">info@epaacademy.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="section-title position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
+                    <h1 class="display-4">Send Us A Message</h1>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- REQUIRED Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="e7f00711-6b6f-4b75-8ce9-c8481766ed68">
+
+    <!-- OPTIONAL: Email subject -->
+    <input type="hidden" name="subject" value="New Contact Message From EPA Website">
+
+    <!-- OPTIONAL: Redirect URL after success -->
+    <input type="hidden" name="redirect" value="https://epa-two.vercel.app/success">
+
+    <div class="row">
+        <div class="col-6 form-group">
+            <input type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
+        </div>
+        <div class="col-6 form-group">
+            <input type="email" name="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required>
         </div>
     </div>
+
+    <div class="form-group">
+        <input type="text" name="user_subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required>
+    </div>
+
+    <div class="form-group">
+        <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required></textarea>
+    </div>
+
+    <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+</form>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
     <!-- Contact End -->
 
     <!-- Footer Start -->
@@ -160,11 +182,11 @@
                 <div class="col-md-6 mb-5">
                     <a href="index.html" class="navbar-brand">
                         <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>EPA</h1>
-                        <small class="text-secondary">Engineers Point Academy</small>
+                        <!-- <small class="text-secondary">Engineers Point Academy</small> -->
                     </a>
                     <p class="m-0">EPA provides the best coaching for ITI, Polytechnic, B.Tech students and AutoCAD learners across EE, ME, CE & CSE branches. Join us to gain practical skills and industry-ready knowledge.</p>
                 </div>
-                <div class="col-md-6 mb-5">
+                <!-- <div class="col-md-6 mb-5">
                     <h3 class="text-white mb-4">Newsletter</h3>
                     <div class="w-100">
                         <div class="input-group">
@@ -174,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-md-4 mb-5">

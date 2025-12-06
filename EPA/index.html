@@ -24,7 +24,19 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>
+.courses-item img {
+    width: 100%;
+    height: 250px; /* you can change height (200–350px recommended) */
+    object-fit: cover; /* makes all images equal without distortion */
+    border-radius: 0;
+    .course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;     /* space between images */
+}
+}
+</style>
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark">
@@ -217,182 +229,106 @@
 
 
     <!-- Courses Start -->
-    <div class="container-fluid px-0 py-5">
-        <div class="row mx-0 justify-content-center pt-5">
-            <div class="col-lg-6">
-                <div class="section-title text-center position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
-                    <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
-                </div>
-            </div>
-        </div>
-        <div class="owl-carousel courses-carousel">
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-1.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-2.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-3.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-4.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-5.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item position-relative">
-                <img class="img-fluid" src="img/courses-6.jpg" alt="">
-                <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
-                    <div class="border-top w-100 mt-3">
-                        <div class="d-flex justify-content-between p-4">
-                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
-                        </div>
-                    </div>
-                    <div class="w-100 bg-white text-center p-4" >
-                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-  <!-- ENROLL FORM (HTML) -->
-  <form id="enrollForm" action="https://api.web3forms.com/submit" method="POST">
-
-  <!-- REQUIRED Web3Forms Access Key -->
-  <input type="hidden" name="access_key" value="e7f00711-6b6f-4b75-8ce9-c8481766ed68">
-
-  <!-- Subject -->
-  <input type="hidden" name="subject" value="New Student Enrollment!">
-
-  <!-- Auto reply -->
-  <input type="hidden" name="replyto" value="email">
-
-  <div class="row justify-content-center bg-image mx-0 mb-5">
-    <div class="col-lg-6 py-5">
-      <div class="bg-white p-5 my-5">
-        <h1 class="text-center mb-4">30% Off For New Students</h1>
-
-        <div class="form-row">
-
-          <!-- Name -->
-          <div class="col-sm-6">
-            <input type="text" name="name" placeholder="Your Name"
-              class="form-control bg-light border-0" style="padding:30px 20px" required>
-          </div>
-
-          <!-- Email -->
-          <div class="col-sm-6">
-            <input type="email" name="email" placeholder="Your Email"
-              class="form-control bg-light border-0" style="padding:30px 20px" required>
-          </div>
-        </div>
-
-        <div class="form-row mt-3">
-
-          <!-- Phone Number (NEW) -->
-          <div class="col-sm-6">
-            <input type="text" name="phone" placeholder="Your Phone Number"
-              class="form-control bg-light border-0" style="padding:30px 20px" required>
-          </div>
-
-          <!-- Course -->
-          <div class="col-sm-6">
-            <select name="course" class="custom-select bg-light border-0 px-3" 
-              style="height:60px" required>
-              <option value="" disabled selected>Select A Course</option>
-              <option value="EE">EE</option>
-              <option value="CE">CE</option>
-              <option value="ME">ME</option>
-              <option value="CSE">CSE</option>
-              <option value="AutoCad">AutoCad</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="form-row mt-3">
-
-          <div class="col-sm-12">
-            <button class="btn btn-primary btn-block" type="submit" style="height:60px">
-              Enroll
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</form>
-
-
-    </div>
+   <div class="container-fluid px-0 py-5">
+    <div class="row mx-0 justify-content-center pt-5">
+        <div class="col-lg-6">
+            <div class="section-title text-center position-relative mb-4">
+                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
+                <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
             </div>
         </div>
     </div>
+
+    <div class="owl-carousel courses-carousel">
+
+        <!-- EE -->
+        <div class="courses-item position-relative">
+            <img class="img-fluid" src="img/ee.jpeg" alt="">
+            <div class="courses-text">
+                <h4 class="text-center text-white px-3">Electrical Engineering (EE)</h4>
+                <div class="border-top w-100 mt-3">
+                    <div class="d-flex justify-content-between p-4">
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Sagar Roy</span>
+                        <span class="text-white"><i class="fa fa-star mr-2"></i>4.8 <small>(520)</small></span>
+                    </div>
+                </div>
+                <div class="w-100 bg-white text-center p-4">
+                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ME -->
+        <div class="courses-item position-relative">
+            <img class="img-fluid" src="img/me.jpg" alt="">
+            <div class="courses-text">
+                <h4 class="text-center text-white px-3">Mechanical Engineering (ME)</h4>
+                <div class="border-top w-100 mt-3">
+                    <div class="d-flex justify-content-between p-4">
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Amit Nad</span>
+                        <span class="text-white"><i class="fa fa-star mr-2"></i>4.8 <small>(410)</small></span>
+                    </div>
+                </div>
+                <div class="w-100 bg-white text-center p-4">
+                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CE -->
+        <div class="courses-item position-relative">
+            <img class="img-fluid" src="img/ce.jpg" alt="">
+            <div class="courses-text">
+                <h4 class="text-center text-white px-3">Civil Engineering (CE)</h4>
+                <div class="border-top w-100 mt-3">
+                    <div class="d-flex justify-content-between p-4">
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Tanmay</span>
+                        <span class="text-white"><i class="fa fa-star mr-2"></i>4.7 <small>(380)</small></span>
+                    </div>
+                </div>
+                <div class="w-100 bg-white text-center p-4">
+                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSE -->
+        <div class="courses-item position-relative">
+            <img class="img-fluid" src="img/courses-5.jpg" alt="">
+            <div class="courses-text">
+                <h4 class="text-center text-white px-3">Computer Science (CSE)</h4>
+                <div class="border-top w-100 mt-3">
+                    <div class="d-flex justify-content-between p-4">
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Ronin</span>
+                        <span class="text-white"><i class="fa fa-star mr-2"></i>4.7 <small>(650)</small></span>
+                    </div>
+                </div>
+                <div class="w-100 bg-white text-center p-4">
+                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AutoCad -->
+        <div class="courses-item position-relative">
+            <img class="img-fluid" src="img/autocad.jpg" alt="">
+            <div class="courses-text">
+                <h4 class="text-center text-white px-3">AutoCad</h4>
+                <div class="border-top w-100 mt-3">
+                    <div class="d-flex justify-content-between p-4">
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Tanmay</span>
+                        <span class="text-white"><i class="fa fa-star mr-2"></i>4.8 <small>(290)</small></span>
+                    </div>
+                </div>
+                <div class="w-100 bg-white text-center p-4">
+                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
     <!-- Courses End -->
 
 
