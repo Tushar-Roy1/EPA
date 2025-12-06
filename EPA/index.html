@@ -324,17 +324,11 @@
   <!-- REQUIRED Web3Forms Access Key -->
   <input type="hidden" name="access_key" value="e7f00711-6b6f-4b75-8ce9-c8481766ed68">
 
-  <!-- Your email (you can change anytime) -->
-  <input type="hidden" name="email" value="">
-
-  <!-- Subject of the email -->
+  <!-- Subject -->
   <input type="hidden" name="subject" value="New Student Enrollment!">
 
   <!-- Auto reply -->
   <input type="hidden" name="replyto" value="email">
-
-  <!-- Thank-you redirect (optional) -->
-  <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/success.html"> -->
 
   <div class="row justify-content-center bg-image mx-0 mb-5">
     <div class="col-lg-6 py-5">
@@ -342,11 +336,14 @@
         <h1 class="text-center mb-4">30% Off For New Students</h1>
 
         <div class="form-row">
+
+          <!-- Name -->
           <div class="col-sm-6">
             <input type="text" name="name" placeholder="Your Name"
               class="form-control bg-light border-0" style="padding:30px 20px" required>
           </div>
 
+          <!-- Email -->
           <div class="col-sm-6">
             <input type="email" name="email" placeholder="Your Email"
               class="form-control bg-light border-0" style="padding:30px 20px" required>
@@ -354,6 +351,14 @@
         </div>
 
         <div class="form-row mt-3">
+
+          <!-- Phone Number (NEW) -->
+          <div class="col-sm-6">
+            <input type="text" name="phone" placeholder="Your Phone Number"
+              class="form-control bg-light border-0" style="padding:30px 20px" required>
+          </div>
+
+          <!-- Course -->
           <div class="col-sm-6">
             <select name="course" class="custom-select bg-light border-0 px-3" 
               style="height:60px" required>
@@ -366,17 +371,23 @@
             </select>
           </div>
 
-          <div class="col-sm-6">
+        </div>
+
+        <div class="form-row mt-3">
+
+          <div class="col-sm-12">
             <button class="btn btn-primary btn-block" type="submit" style="height:60px">
               Enroll
             </button>
           </div>
+
         </div>
 
       </div>
     </div>
   </div>
 </form>
+
 
     </div>
             </div>
