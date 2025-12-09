@@ -30,12 +30,14 @@
     height: 250px; /* you can change height (200–350px recommended) */
     object-fit: cover; /* makes all images equal without distortion */
     border-radius: 0;
-    .course-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;     /* space between images */
+
 }
+.team-item img {
+    width: 100%;
+    height: 320px;       /* Same height for all */
+    object-fit: cover;  /* Crop nicely without distortion */
 }
+
 </style>
 <body>
     <!-- Topbar Start -->
@@ -143,9 +145,16 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
-                        <h1 class="display-4">First Choice For Online Education Anywhere</h1>
+                        <h1 class="display-4">First Choice For Online/Offline Education</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p>
+                    EPA is a trusted institute offering high-quality technical education for students in 
+                    Electrical Engineering (EE), Mechanical Engineering (ME), Civil Engineering (CE), 
+                    Computer Science (CSE) and industry-ready courses like AutoCAD.
+                    <br><br>
+                    With experienced instructors, practical training and modern labs, we help students gain 
+                    real-world skills, build confidence and prepare for job opportunities in top companies.
+                </p>
                     <div class="row pt-3 mx-0">
                         <div class="col-3 px-0">
                             <div class="bg-success text-center p-4">
@@ -181,50 +190,69 @@
 
     <!-- Feature Start -->
     <div class="container-fluid bg-image" style="margin: 90px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 my-5 pt-5 pb-lg-5">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
-                        <h1 class="display-4">Why You Should Start Learning with Us?</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+                <div class="section-title position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
+                    <h1 class="display-4">Why You Should Start Learning with EPA?</h1>
+                </div>
+
+                <p class="mb-4 pb-2">
+                    Engineers Point Academy (EPA) is committed to providing high-quality technical education for ITI, 
+                    Polytechnic, B.Tech, and AutoCAD students. We focus on practical learning, real-world skills, and 
+                    career-oriented training to help students succeed in today's competitive industry.
+                </p>
+
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-primary mr-4">
+                        <i class="fa fa-2x fa-graduation-cap text-white"></i>
                     </div>
-                    <p class="mb-4 pb-2">Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.</p>
-                    <div class="d-flex mb-3">
-                        <div class="btn-icon bg-primary mr-4">
-                            <i class="fa fa-2x fa-graduation-cap text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>Skilled Instructors</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="btn-icon bg-secondary mr-4">
-                            <i class="fa fa-2x fa-certificate text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>International Certificate</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="btn-icon bg-warning mr-4">
-                            <i class="fa fa-2x fa-book-reader text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>Online Classes</h4>
-                            <p class="m-0">Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
-                        </div>
+                    <div class="mt-n1">
+                        <h4>Skilled & Experienced Instructors</h4>
+                        <p>
+                            Learn from expert teachers with real industry experience in CSE, EE, ME, CE, and AutoCAD. 
+                            Our instructors focus on concept clarity and practical application.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
+
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-secondary mr-4">
+                        <i class="fa fa-2x fa-certificate text-white"></i>
                     </div>
+                    <div class="mt-n1">
+                        <h4>Certified & Job-Oriented Courses</h4>
+                        <p>
+                            We provide recognized certifications and job-focused training programs designed to make 
+                            students industry-ready and confident for interviews and technical work.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="btn-icon bg-warning mr-4">
+                        <i class="fa fa-2x fa-book-reader text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>Offline & Online Learning Support</h4>
+                        <p class="m-0">
+                            Students can attend classroom training as well as get online support, recorded materials, 
+                            doubt-clearing sessions, and project guidance anytime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- Feature Start -->
 
 
@@ -253,7 +281,7 @@
                     </div>
                 </div>
                 <div class="w-100 bg-white text-center p-4">
-                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    <a class="btn btn-primary" href="eedetail.html">Course Detail</a>
                 </div>
             </div>
         </div>
@@ -299,12 +327,12 @@
                 <h4 class="text-center text-white px-3">Computer Science (CSE)</h4>
                 <div class="border-top w-100 mt-3">
                     <div class="d-flex justify-content-between p-4">
-                        <span class="text-white"><i class="fa fa-user mr-2"></i>Ronin</span>
+                        <span class="text-white"><i class="fa fa-user mr-2"></i>Saikat Garang,Swastika Das</span>
                         <span class="text-white"><i class="fa fa-star mr-2"></i>4.7 <small>(650)</small></span>
                     </div>
                 </div>
                 <div class="w-100 bg-white text-center p-4">
-                    <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    <a class="btn btn-primary" href="csedetail.html">Course Detail</a>
                 </div>
             </div>
         </div>
@@ -341,10 +369,11 @@
             </div>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/sagar.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Instructor Name</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <h5 class="mb-3">Sagar Roy</h5>
+                        <p class="mb-2">EE</p>
+                        <p class="mb-2">Experience:5 year+</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -355,10 +384,11 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/saikat.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Instructor Name</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <h5 class="mb-3">Saikat Garang</h5>
+                        <p class="mb-2">CSE/IT</p>
+                        <p class="mb-2">Experience:2 year+</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -369,10 +399,11 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/Swastika.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Instructor Name</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <h5 class="mb-3">Swastika Das</h5>
+                        <p class="mb-2">CSE/English</p>
+                        <p class="mb-2">Experience:2 year+</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -383,10 +414,41 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/kushal.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Instructor Name</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <h5 class="mb-3">Kushal Halder</h5>
+                        <p class="mb-2">CE</p>
+                        <p class="mb-2">Experience:2 year+</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/tanmay.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Tanmoy Ghosh</h5>
+                        <p class="mb-2">CE</p>
+                        <p class="mb-2">Experience:10 year+</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/sunirmol.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Sunirmol Roy</h5>
+                        <p class="mb-2">CE</p>
+                        <p class="mb-2">Experience:2 year+</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -403,45 +465,95 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Testimonial</h6>
-                        <h1 class="display-4">What Say Our Students</h1>
-                    </div>
-                    <p class="m-0">Dolor est dolores et nonumy sit labore dolores est sed rebum amet, justo duo ipsum sanctus dolore magna rebum sit et. Diam lorem ea sea at. Nonumy et at at sed justo est nonumy tempor. Vero sea ea eirmod, elitr ea amet diam ipsum at amet. Erat sed stet eos ipsum diam</p>
+   <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="section-title position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Testimonial</h6>
+                    <h1 class="display-4">What Our Students Say</h1>
                 </div>
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="bg-white p-5">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
-                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="img/testimonial-2.jpg" alt="">
-                                <div>
-                                    <h5>Student Name</h5>
-                                    <span>Web Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-5">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
-                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
-                                <img class="img-fluid mr-4" src="img/testimonial-1.jpg" alt="">
-                                <div>
-                                    <h5>Student Name</h5>
-                                    <span>Web Design</span>
-                                </div>
+                <p class="m-0">
+                    Our students come from ITI, Polytechnic, B.Tech, and AutoCAD backgrounds. Their success stories and
+                    positive feedback inspire us to deliver the best practical and career-focused education every day.
+                </p>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="owl-carousel testimonial-carousel">
+
+                    <!-- Review 1 -->
+                    <div class="bg-white p-5">
+                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                        <p>
+                            EPA helped me clear my concepts in Computer Science and improved my coding skills. 
+                            The teachers explain everything practically, and now I feel confident for interviews.
+                        </p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="img/id.png" alt="">
+                            <div>
+                                <h5>Ankita Mondal</h5>
+                                <span>Diploma CSE Student</span>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white p-5">
+                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                        <p>
+                            I joined EPA for Electrical Engineering coaching. The teachers are very supportive and 
+                            focus on both theory and practical knowledge. Highly recommended for diploma students.
+                        </p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="img/id.png" alt="">
+                            <div>
+                                <h5>Rahul Das</h5>
+                                <span>Diploma Electrical Student</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white p-5">
+                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                        <p>
+                            I learned AutoCAD from EPA and now I can do professional drawings confidently. 
+                            The practical sessions helped me a lot in real projects.
+                        </p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="img/id.png" alt="">
+                            <div>
+                                <h5>Soumya Roy</h5>
+                                <span>AutoCAD Student</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="bg-white p-5">
+                        <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                        <p>
+                            The Civil Engineering coaching at EPA is excellent. The teachers explain every topic 
+                            with examples, site references, and real-life applications.
+                        </p>
+                        <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                            <img class="img-fluid mr-4" src="img/id.png" alt="">
+                            <div>
+                                <h5>Arindam Ghosh</h5>
+                                <span>Diploma Civil Student</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+</div>
+
     <!-- Testimonial Start -->
 
 
