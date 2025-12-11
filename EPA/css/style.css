@@ -9968,3 +9968,62 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover {
   background: #2878EB;
 }
+/* PREMIUM NAVBAR */
+/* Make navbar sticky */
+.premium-navbar {
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+    z-index: 1050; /* higher than everything */
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* LOGO STYLE */
+.nav-logo {
+    height: 50px;
+    width: auto;
+    border-radius: 25px;
+    margin-right: 12px;
+}
+
+/* BRAND TEXT */
+.nav-brand-text {
+    font-size: 30px;
+    font-weight: 800;
+    color: #2878EB;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: 500;
+    color: #444 !important;
+    padding: 10px 22px !important;
+    transition: 0.2s ease;
+}
+
+/* NAV HOVER EFFECT */
+.navbar-nav .nav-link:hover {
+    color: #2878EB !important;
+    transform: translateY(-2px);
+}
+
+/* JOIN US BUTTON */
+.premium-btn {
+    padding: 10px 30px;
+    background: #2878EB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.25s;
+}
+
+.premium-btn:hover {
+    background: #0054c4;
+    transform: translateY(-2px);
+}

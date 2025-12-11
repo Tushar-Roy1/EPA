@@ -37,74 +37,51 @@
     height: 320px;       /* Same height for all */
     object-fit: cover;  /* Crop nicely without distortion */
 }
+.navbar-nav .nav-link {
+    font-size: 18px;        /* Increase text size */
+    font-weight: 600;       /* Make it premium bold */
+    padding: 12px 18px;     /* Better spacing */
+}
+
 
 </style>
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>9932013474</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>engineerspointacademy.edu@gmail.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <!-- <a class="text-white px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a> -->
-                    <!-- <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a> -->
-                    <!-- <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a> -->
-                    <a class="text-white pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-           <a href="index.html" class="navbar-brand ml-lg-3 d-flex align-items-center">
-    <img src="img/logo.jpg" alt="EPA Logo" style="height: 50px; margin-right: 10px; border-radius: 25px;">
-    <h1 class="m-0 text-uppercase text-primary">EPA</h1>
-</a>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light premium-navbar py-2 px-lg-5">
+        
+        <!-- LOGO + BRAND -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo.jpg" alt="EPA Logo" class="nav-logo">
+            <h1 class="m-0 text-uppercase text-primary">EPA</h1>
+        </a>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                    <div class="nav-item dropdown">
-                        <a href="center.html" class="nav-link " >Centers</a>
-                        <!-- <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">Course Detail</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="team.html" class="dropdown-item">Instructors</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div> -->
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+        <!-- MOBILE MENU -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+            <div class="navbar-nav mx-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="course.html" class="nav-item nav-link">Courses</a>
+                <a href="center.html" class="nav-item nav-link">Centers</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-        </nav>
-    </div>
+
+            <a href="contact.html" class="btn premium-btn d-none d-lg-block">Join Us</a>
+        </div>
+    </nav>
+</div>
+
     <!-- Navbar End -->
 
 
@@ -505,6 +482,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Swarnendu Ghosh</h5>
+                        <p class="mb-2">ME</p>
+                        <p class="mb-2">Experience:2 year+</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -732,6 +724,8 @@
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                    <a class="text-white mr-4" href="">
+                        <i class="fab fa-youtube fa-2x"></i>
                     <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                 </div>
             </div>
@@ -753,7 +747,7 @@
                 <h3 class="text-white mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white-50 mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Location</a>
+                    <a class="text-white-50 mb-2" href="https://maps.app.goo.gl/pXqWVbBRSTHMMG4CA?g_st=aw"><i class="fa fa-angle-right mr-2"></i>Location</a>
                     <a class="text-white-50 mb-2" href="course.html"><i class="fa fa-angle-right mr-2"></i>Online Classes</a>
                     <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>

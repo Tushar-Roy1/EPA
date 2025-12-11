@@ -23,62 +23,66 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+<style>
+    /* Responsive Fixes */
+    .nav-logo {
+        height: 45px;
+        border-radius: 25px;
+    }
+    @media (max-width: 576px) {
+        .nav-logo {
+            height: 35px;
+        }
+        .page-header .display-1 {
+            font-size: 45px;
+        }
+    }
+
+    /* Remove fixed height from contact box */
+    .contact-info-box {
+        padding: 40px 30px;
+    }
+</style>
+
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+91 98765 43210</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>engineerspointacademy.edu@gmail.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="text-white pl-2" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
+    <!-- Navbar -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>EPA</h1>
-                <!-- <small class="text-secondary">Engineers Point Academy</small> -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light premium-navbar py-2 px-lg-5">
+
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="img/logo.jpg" alt="EPA Logo" class="nav-logo">
+                <h1 class="m-0 text-uppercase text-primary">EPA</h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="course.html" class="nav-item nav-link">Courses</a>
                     <a href="center.html" class="nav-item nav-link">Centers</a>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="index.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="contact.html" class="btn premium-btn d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
+    <!-- Header -->
     <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
             <h1 class="text-white display-1">Contact</h1>
             <div class="d-inline-flex text-white mb-5">
-                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <p class="m-0 text-uppercase">
+                    <a class="text-white" href="index.html">Home</a>
+                </p>
                 <i class="fa fa-angle-double-right pt-1 px-3"></i>
                 <p class="m-0 text-uppercase">Contact</p>
             </div>
@@ -86,173 +90,175 @@
     </div>
     <!-- Header End -->
 
-    <!-- Contact Start -->
-     <div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="row align-items-center">
+    <!-- Contact Section -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
 
-            <!-- Contact Info -->
-            <div class="col-lg-5 mb-5 mb-lg-0">
-                <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="btn-icon bg-primary mr-4">
-                            <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="bg-light contact-info-box">
+
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-primary mr-4">
+                                <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p class="m-0">Nalikul Station Bazar, Nalikul Hooghly</p>
+                            </div>
                         </div>
-                        <div class="mt-n1">
-                            <h4>Our Location</h4>
-                            <p class="m-0">Nalikul Station Bazar, Nalikul Hooghly</p>
+
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-secondary mr-4">
+                                <i class="fa fa-2x fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p class="m-0">9932013474</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="btn-icon bg-secondary mr-4">
-                            <i class="fa fa-2x fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>Call Us</h4>
-                            <p class="m-0">9932013474</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center">
-                        <div class="btn-icon bg-warning mr-4">
-                            <i class="fa fa-2x fa-envelope text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>Email Us</h4>
-                            <p class="m-0">engineerspointacademy.edu@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="col-lg-7">
-                <div class="section-title position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Join Us</h6>
-                    <h1 class="display-4">Send Us A Message</h1>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-
-    <!-- REQUIRED Web3Forms Access Key -->
-    <input type="hidden" name="access_key" value="e7f00711-6b6f-4b75-8ce9-c8481766ed68">
-
-    <!-- OPTIONAL: Email subject -->
-    <input type="hidden" name="subject" value="New Contact Message From EPA Website">
-
-    <!-- OPTIONAL: Redirect URL after success -->
-    <input type="hidden" name="redirect" value="https://epa-two.vercel.app/success">
-
-    <div class="row">
-        <div class="col-6 form-group">
-            <input type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
-        </div>
-        <div class="col-6 form-group">
-            <input type="email" name="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <input type="text" name="user_subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required>
-    </div>
-
-    <div class="form-group">
-        <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required></textarea>
-    </div>
-
-    <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-</form>
-
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-    <!-- Contact End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="col-md-6 mb-5">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>EPA</h1>
-                        <!-- <small class="text-secondary">Engineers Point Academy</small> -->
-                    </a>
-                    <p class="m-0">EPA provides the best coaching for ITI, Polytechnic, B.Tech students and AutoCAD learners across EE, ME, CE & CSE branches. Join us to gain practical skills and industry-ready knowledge.</p>
-                </div>
-                <!-- <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">Newsletter</h3>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary px-4">Sign Up</button>
+                        <div class="d-flex align-items-center">
+                            <div class="btn-icon bg-warning mr-4">
+                                <i class="fa fa-2x fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p class="m-0">engineerspointacademy.edu@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Enroll & Join Us</h6>
+                        <h1 class="display-4">Send Us A Message</h1>
+                    </div>
+
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="e7f00711-6b6f-4b75-8ce9-c8481766ed68">
+
+                        <input type="hidden" name="subject" value="New Contact Message From EPA Website">
+
+                        <input type="hidden" name="redirect" value="https://epa-two.vercel.app/success">
+
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="email" name="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="user_subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+
+                    </form>
+
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+
             <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white">
+                            <img src="img/logo.jpg" alt="EPA Logo" style="height: 50px; margin-right: 10px; border-radius: 25px;">
+                            EPA
+                        </h1>
+                    </a>
+                    <p class="m-0">
+                        EPA (Engineers Point Academy) is a trusted coaching center for ITI, Polytechnic, 
+                        and B.Tech students. We provide EE, ME, CE, CSE & AutoCAD training with expert faculty.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Contact Info -->
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>Nalikul, Hooghly, West Bengal, India</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+91 98765 43210</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Main Office: Nalikul, Station Bazar, 2nd Floor</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>9932013474</p>
                     <p><i class="fa fa-envelope mr-2"></i>engineerspointacademy.edu@gmail.com</p>
+
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="text-white mr-4" href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                        <a class="text-white mr-4" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                        <a class="text-white" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-youtube"></i></a>
+                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
+
+                <!-- Courses -->
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Our Courses</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>ITI Coaching</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Polytechnic</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>B.Tech Preparation</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>AutoCAD</a>
+                        <a class="text-white-50 mb-2" href="eedetail.html"><i class="fa fa-angle-right mr-2"></i>Electrical Engineering (EE)</a>
+                        <a class="text-white-50 mb-2" href="medetail.html"><i class="fa fa-angle-right mr-2"></i>Mechanical Engineering (ME)</a>
+                        <a class="text-white-50 mb-2" href="cedetail.html"><i class="fa fa-angle-right mr-2"></i>Civil Engineering (CE)</a>
+                        <a class="text-white-50 mb-2" href="csedetail.html"><i class="fa fa-angle-right mr-2"></i>Computer Science (CSE)</a>
+                        <a class="text-white-50" href="autocaddetail.html"><i class="fa fa-angle-right mr-2"></i>AutoCAD (with Certificate)</a>
                     </div>
                 </div>
+
+                <!-- Quick Links -->
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Conditions</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
-                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Support</a>
-                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white-50 mb-2" href="https://maps.app.goo.gl/pXqWVbBRSTHMMG4CA?g_st=aw"><i class="fa fa-angle-right mr-2"></i>Location</a>
+                        <a class="text-white-50 mb-2" href="course.html"><i class="fa fa-angle-right mr-2"></i>Online Classes</a>
+                        <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+
+    <!-- Bottom Footer -->
+    <div class="container-fluid bg-dark text-white-50 border-top py-4">
         <div class="container">
             <div class="row">
+
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">EPA</a>. All Rights Reserved.
-                    </p>
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">EPA Academy</a>. All Rights Reserved.</p>
                 </div>
+
                 <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </p>
+                    <p class="m-0">Developed with ❤️ by EPA Team</p>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top (only one) -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
 
-    <!-- JavaScript Libraries -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -260,77 +266,72 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script><script>
-        
-// Web3Forms AJAX + SweetAlert
-const contactForm = document.getElementById('contactForm');
+    <script src="js/main.js"></script>
 
-if (contactForm) {
-  contactForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
+<script>
+    // Web3Forms AJAX + SweetAlert
+    const contactForm = document.getElementById('contactForm');
 
-    const form = this;
-    const formData = new FormData(form);
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
 
-    // Confirm
-    const confirm = await Swal.fire({
-      title: 'Send Message?',
-      text: 'Are you sure you want to send this message?',
-      icon: 'question',
-      showCancelButton: true,
-      confirmButtonText: 'Yes, Send',
-      cancelButtonText: 'Cancel'
-    });
+            const form = this;
+            const formData = new FormData(form);
 
-    if (!confirm.isConfirmed) return;
+            const confirm = await Swal.fire({
+                title: 'Send Message?',
+                text: 'Are you sure you want to send this message?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, Send',
+                cancelButtonText: 'Cancel'
+            });
 
-    // Loading
-    Swal.fire({
-      title: 'Sending...',
-      allowOutsideClick: false,
-      didOpen: () => Swal.showLoading()
-    });
+            if (!confirm.isConfirmed) return;
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
-      });
+            Swal.fire({
+                title: 'Sending...',
+                allowOutsideClick: false,
+                didOpen: () => Swal.showLoading()
+            });
 
-      const data = await res.json();
-      console.log("Web3Forms Response:", data);
+            try {
+                const res = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
 
-      if (res.ok && data.success) {
-        Swal.fire({
-          title: 'Message Sent!',
-          text: 'Thank you for contacting EPA! We will reply soon.',
-          icon: 'success',
-          timer: 2500,
-          showConfirmButton: false
+                const data = await res.json();
+
+                if (res.ok && data.success) {
+                    Swal.fire({
+                        title: 'Message Sent!',
+                        text: 'Thank you for contacting EPA! We will reply soon.',
+                        icon: 'success',
+                        timer: 2500,
+                        showConfirmButton: false
+                    });
+                    form.reset();
+                    return;
+                }
+
+                Swal.fire({
+                    title: 'Error',
+                    html: 'Something went wrong.<br>' + (data.message || 'Unknown error'),
+                    icon: 'error'
+                });
+
+            } catch (err) {
+                Swal.fire({
+                    title: 'Network Error',
+                    text: 'Could not send the form. Check your internet or try again.',
+                    icon: 'error'
+                });
+            }
         });
-        form.reset();
-        return;
-      }
-
-      Swal.fire({
-        title: 'Error',
-        html: 'Something went wrong.<br>' + (data.message || 'Unknown error'),
-        icon: 'error'
-      });
-
-    } catch (err) {
-      console.error("Fetch Error:", err);
-      Swal.fire({
-        title: 'Network Error',
-        text: 'Could not send the form. Check your internet or try again.',
-        icon: 'error'
-      });
     }
-
-  });
-}
 </script>
-</body>
 
+</body>
 </html>
