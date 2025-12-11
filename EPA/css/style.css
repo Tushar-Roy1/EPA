@@ -9987,6 +9987,41 @@ h6,
     border-radius: 25px;
     margin-right: 12px;
 }
+/* Fix small navbar logo + EPA size on mobile */
+@media (max-width: 576px) {
+
+    /* Increase navbar height */
+    .premium-navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* Increase logo size */
+    .nav-logo {
+        height: 55px !important;   /* you can change to 60px if needed */
+        width: auto;
+    }
+
+    /* Increase EPA text */
+    .navbar-brand h1 {
+        font-size: 30px !important;   /* originally small on mobile */
+        margin-left: 8px;
+        font-weight: 800;
+    }
+
+    /* Increase menu icon size */
+    .navbar-toggler {
+        padding: 6px 10px;
+        font-size: 22px;
+    }
+
+    /* Increase inside menu link size */
+    .navbar-nav .nav-link {
+        font-size: 18px !important;
+        padding: 10px 0;
+    }
+}
+
 
 /* BRAND TEXT */
 .nav-brand-text {
