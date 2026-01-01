@@ -267,3 +267,69 @@ h6,
 .testimonial-carousel .owl-nav .owl-prev:hover {
     background: $primary;
 }
+/* Overlay */
+#newYearOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popup box */
+.new-year-box {
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 40px rgba(255, 204, 0, 0.9);
+    animation: popIn 1s ease;
+}
+
+.new-year-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.new-year-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.new-year-box button {
+    background: #fff;
+    color: #ff6600;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.new-year-box button:hover {
+    background: #ffe066;
+}
+
+/* Animation */
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Confetti canvas */
+#confettiCanvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
