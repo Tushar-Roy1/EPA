@@ -158,35 +158,44 @@
                 <!-- STATS MADE RESPONSIVE -->
                 <div class="row pt-3">
 
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="bg-success text-center p-3 rounded">
-                            <h2 class="text-white" data-toggle="counter-up">50</h2>
-                            <p class="text-white m-0 small">Subjects</p>
-                        </div>
-                    </div>
+    <div class="col-6 col-md-3 mb-3">
+        <div class="bg-success text-center p-3 rounded">
+            <h2 class="text-white">
+                <span data-toggle="counter-up">50</span>+
+            </h2>
+            <p class="text-white m-0 small">Subjects</p>
+        </div>
+    </div>
 
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="bg-primary text-center p-3 rounded">
-                            <h2 class="text-white" data-toggle="counter-up">20</h2>
-                            <p class="text-white m-0 small">Courses</p>
-                        </div>
-                    </div>
+    <div class="col-6 col-md-3 mb-3">
+        <div class="bg-primary text-center p-3 rounded">
+            <h2 class="text-white">
+                <span data-toggle="counter-up">20</span>+
+            </h2>
+            <p class="text-white m-0 small">Courses</p>
+        </div>
+    </div>
 
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="bg-secondary text-center p-3 rounded">
-                            <h2 class="text-white" data-toggle="counter-up">40</h2>
-                            <p class="text-white m-0 small">Instructors</p>
-                        </div>
-                    </div>
+    <div class="col-6 col-md-3 mb-3">
+        <div class="bg-secondary text-center p-3 rounded">
+            <h2 class="text-white">
+                <span data-toggle="counter-up">40</span>+
+            </h2>
+            <p class="text-white m-0 small">Instructors</p>
+        </div>
+    </div>
 
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="bg-warning text-center p-3 rounded">
-                            <h2 class="text-white" data-toggle="counter-up">2000</h2>
-                            <p class="text-white m-0 small">Students</p>
-                        </div>
-                    </div>
+    <div class="col-6 col-md-3 mb-3">
+        <div class="bg-warning text-center p-3 rounded">
+            <h2 class="text-white">
+                <span data-toggle="counter-up">2000</span>+
+            </h2>
+            <p class="text-white m-0 small">Students</p>
+        </div>
+    </div>
 
-                </div>
+</div>
+
             </div>
 
         </div>
@@ -1009,6 +1018,17 @@ if (contactForm) {
 
   });
 }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+<script>
+  $('[data-toggle="counter-up"]').counterUp({
+      delay: 10,
+      time: 1000
+  });
 </script>
 
 
