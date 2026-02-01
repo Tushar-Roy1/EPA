@@ -46,83 +46,9 @@
     font-weight: 600;       /* Make it premium bold */
     padding: 12px 18px;     /* Better spacing */
 }
-/* 🎆 Happy New Year Overlay */
-#newYearOverlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Popup Box */
-.new-year-box {
-    background: linear-gradient(135deg, #ffcc00, #ff6600);
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    color: #fff;
-    animation: popIn 1s ease, glowOnce 2s ease forwards;
-}
-
-@keyframes glowOnce {
-    0% { box-shadow: 0 0 0 rgba(255,204,0,0); }
-    50% { box-shadow: 0 0 40px rgba(255,204,0,0.9); }
-    100% { box-shadow: 0 0 15px rgba(255,204,0,0.4); }
-}
 
 
-.new-year-box h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
 
-.new-year-box p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.new-year-box button {
-    background: #fff;
-    color: #ff6600;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.new-year-box button:hover {
-    background: #ffe066;
-}
-
-/* Animation */
-@keyframes popIn {
-    from {
-        transform: scale(0.6);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Confetti Canvas */
-#confettiCanvas {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 10000;
-}
-@keyframes glowOnce {
-  0%   { box-shadow: 0 0 0 rgba(255,204,0,0); }
-  50%  { box-shadow: 0 0 40px rgba(255,204,0,0.9); }
-  100% { box-shadow: 0 0 15px rgba(255,204,0,0.4); }
-}
 
 
 </style>
@@ -132,16 +58,7 @@
 <body>
     <body>
 
-<!-- 🎉 Happy New Year Effect -->
-<div id="newYearOverlay">
-  <div class="new-year-box">
-    <h1>🎉 Happy New Year 2026 🎉</h1>
-    <p>Wishing you success, happiness & growth</p>
-    <button onclick="closeNewYear()">Celebrate 🎆</button>
-  </div>
-</div>
 
-<canvas id="confettiCanvas"></canvas>
 
 
 
